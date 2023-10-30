@@ -1,9 +1,8 @@
 package org.example.fibonacci;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FibonacciTest {
 
@@ -11,6 +10,6 @@ class FibonacciTest {
     void shouldReturnFibonacciCalculation() {
         int fibonacci = Fibonacci.fibonacci(4);
 
-        Assertions.assertThat(fibonacci).isEqualTo(3);
+        assertThat(fibonacci).isEqualTo(3);
     }
 }
