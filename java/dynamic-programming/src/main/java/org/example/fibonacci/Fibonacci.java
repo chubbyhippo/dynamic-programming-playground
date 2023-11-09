@@ -1,6 +1,10 @@
 package org.example.fibonacci;
 
 public class Fibonacci {
+
+    private Fibonacci() {
+        throw new IllegalStateException("Fibonacci");
+    }
     public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
